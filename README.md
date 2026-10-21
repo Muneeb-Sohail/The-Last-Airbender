@@ -37,3 +37,6 @@ Browser support matters because browsers may implement features differently. Tes
 Semantic HTML uses elements that describe the purpose of their content. Examples include `<nav>`, `<main>`, and `<article>`, which help organize a webpage and make its structure clearer.
 
 A `<div>` is non-semantic because it provides a generic container without describing the meaning of its content.
+
+## HTML Validation
+The website was checked using the W3C Markup Validation Service. Only one error was found during validation, and it was corrected. A screenshot of the error is attached as evidence of the validation process.
