@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Four Nations | Join the Journey</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Page header -->
+    <header class="page-header">
+      <img
+        src="images/Balance.jpg"
+        alt="Yin and Yang symbol representing balance"
+        class="header-symbol"
+      />
+      <h1>Join the Journey</h1>
+      <p>Find your nation. Shape your destiny.</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="index.html">HOME</a>
+      <a href="information.html">THE NATIONS</a>
+      <a href="registration.html">JOIN THE JOURNEY</a>
+    </nav>
+
+    <main>
+      <section class="intro-panel">
+        <h2>Registration Form</h2>
+        <p>
+          Choose the nation you feel connected to and tell us what you would
+          like to explore in the Avatar world. 
+        </p>
+      </section>
+
+      <div class="form-layout">
+        <form id="registration-form" action="#" method="get">
+          <fieldset>
+            <legend>01. Account Information</legend>
+
+            <label for="fullname">Full Name <span>*</span></label>
+            <input
+              type="text"
+              id="fullname"
+              name="fullname"
+              placeholder="Enter your full name"
+              required
+            />
+
+            <label for="email">Email Address <span>*</span></label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="you@example.com"
+              required
+            />
+
+            <label for="password">Password <span>*</span></label>
+            <input
+              type="password"
+              id="password"
+              name="password"
+              minlength="8"
+              placeholder="At least 8 characters"
+              required
+            />
+
+            <div class="two-columns">
+              <div>
+                <label for="age">Age</label>
+                <input
+                  type="number"
+                  id="age"
+                  name="age"
+                  min="13"
+                  max="100"
+                  placeholder="13 - 100"
+                />
+              </div>
+              <div>
+                <label for="date">Preferred Date</label>
+                <input type="date" id="date" name="date" />
+              </div>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>02. Choose Your Nation <span>*</span></legend>
+            <div class="choice-grid">
+              <label class="choice water-choice"
+                ><input
+                  type="radio"
+                  name="nation"
+                  value="Water Tribe"
+                  required
+                />
+                <span class="element-icon">◉</span> Water Tribe</label
+              >
+              <label class="choice earth-choice"
+                ><input type="radio" name="nation" value="Earth Kingdom" />
+                <span class="element-icon">⬟</span> Earth Kingdom</label
+              >
+              <label class="choice fire-choice"
+                ><input type="radio" name="nation" value="Fire Nation" />
+                <span class="element-icon">♨</span> Fire Nation</label
+              >
+              <label class="choice air-choice"
+                ><input type="radio" name="nation" value="Air Nomads" />
+                <span class="element-icon">◎</span> Air Nomads</label
+              >
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>03. Your Interests</legend>
+            <label class="check-choice"
+              ><input type="checkbox" name="interests" value="Bending" />
+              Learning the bending arts</label
+            >
+            <label class="check-choice"
+              ><input type="checkbox" name="interests" value="Training" />
+              Training with the masters</label
+            >
+            <label class="check-choice"
+              ><input type="checkbox" name="interests" value="Adventure" />
+              Exploring the world</label
+            >
+            <label class="check-choice"
+              ><input type="checkbox" name="interests" value="Spirits" />
+              Learning about spirits and history</label
+            >
+
+            <label for="character">Favorite Character <span>*</span></label>
+            <select id="character" name="character" required>
+              <option value="" disabled selected>Select a character</option>
+              <option value="Aang">Aang</option>
+              <option value="Katara">Katara</option>
+              <option value="Sokka">Sokka</option>
+              <option value="Toph">Toph</option>
+              <option value="Zuko">Zuko</option>
+              <option value="Iroh">Uncle Iroh</option>
+              <option value="Appa">Appa</option>
+            </select>
+
+            <label for="comments">Additional Comments</label>
+            <textarea
+              id="comments"
+              name="comments"
+              rows="5"
+              maxlength="300"
+              placeholder="Tell us what interests you (maximum 300 characters)."
+            ></textarea>
+            <small>Fields marked * are required.</small>
+          </fieldset>
+
+          <div class="buttons">
+            <button type="submit">Join the Nations</button>
+            <button type="reset" class="reset-button">Reset Form</button>
+          </div>
+        </form>
+
+        <aside class="side-panel">
+          <h2>Why Join?</h2>
+          <div class="side-item">
+            <span class="element-icon water-choice">◉</span>
+            <p>Learn about the bending arts and their traditions.</p>
+          </div>
+
+          <div class="side-item">
+            <span class="element-icon earth-choice">⬟</span>
+            <p>Discover the places and cultures of all four nations.</p>
+          </div>
+
+          <div class="side-item">
+            <span class="element-icon fire-choice">♨</span>
+            <p>Choose the values that best represent your journey.</p>
+          </div>
+
+          <div class="side-item">
+            <span class="element-icon air-choice">◎</span>
+            <p>Remember that balance comes from understanding others.</p>
+          </div>
+          <img
+            src="images/Map.jpg"
+            alt="Illustrated map of the four nations"
+            class="side-map"
+          />
+          <blockquote>“The Avatar Brings peace”</blockquote>
+        </aside>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>Created for Web Technologies assignment #2.</p>
+      <p>
+       Avatar: The Last Airbender and its characters belong to their respective
+       rights holders.
+      </p>
+    </footer>
+  </body>
+</html>
